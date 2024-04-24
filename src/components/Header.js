@@ -1,13 +1,14 @@
 import { useState } from 'react';
 import { LOGO_URL } from '../utils/constants';
 import { IoMdLogIn, IoMdLogOut } from 'react-icons/io';
+import logo from '../../assests/images/main-logo.png';
 
 export const Header = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <div className="header">
       <div className="logo-container">
-        <img className="logo" src={LOGO_URL} alt="logo" />
+        <img className="logo" src={logo} alt="logo" />
         <p className="food-xpress">FoodXpress</p>
       </div>
       <div className="nav-items">

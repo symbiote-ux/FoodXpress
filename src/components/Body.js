@@ -49,7 +49,6 @@ export const Body = () => {
     // } = json;
 
     // Using mock data because of CORS
-
     const restaurantsData = RESTAURANTS_MOCK_DATA.map((r, i) => ({
       ...r,
       info: { ...r.info, cloudinaryImageId: ImagesPath[i] },
