@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { Shimmer } from './Shimmer';
 import { SWIGGY_API_URL } from '../utils/constants';
 import { RESTAURANTS_MOCK_DATA } from '../utils/mockData';
-import ImagesPath from '../utils/imagesPath';
+import imagesPath from '../utils/imagesPath';
 
 export const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
@@ -51,7 +51,7 @@ export const Body = () => {
     // Using mock data because of CORS
     const restaurantsData = RESTAURANTS_MOCK_DATA.map((r, i) => ({
       ...r,
-      info: { ...r.info, cloudinaryImageId: ImagesPath[i] },
+      info: { ...r.info, cloudinaryImageId: imagesPath[i] },
     }));
 
     setListOfRestaurants(restaurantsData);

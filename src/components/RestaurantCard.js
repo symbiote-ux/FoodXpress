@@ -1,5 +1,4 @@
 import { SWIGGY_IMG_URL } from '../utils/constants';
-import startLogo from '../../assests/images/star-logo.jpeg';
 
 export const RestaurantCard = ({ info }) => {
   const {
@@ -32,7 +31,7 @@ export const RestaurantCard = ({ info }) => {
             <div className="rating">
               <img
                 className="star-rating-logo"
-                src={startLogo}
+                src="images/star-logo.jpeg"
                 alt="star rating logo"
               />
               <p>{avgRating}</p>
