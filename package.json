@@ -4,7 +4,7 @@
   "description": "Saurabh Chauhan",
   "scripts": {
     "test": "jest",
-    "start": "parcel index.html",
+    "start": "parcel index.html && cp -R public/* dist/",
     "build": "parcel build index.html && cp -R public/* dist/"
   },
   "author": "",
